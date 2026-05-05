@@ -1,43 +1,56 @@
 <!DOCTYPE html>
-<html lang="">
-
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- codificação de caracteres-->
     <meta name="description" content="Conteúdos sobre HTML">
     <meta name="keywords" content="HTML, CSS, JavaScript, Web, Site">
-    <meta name="author" content="Kelvin Antunes">
+    <meta name="author" content="Anderson Marcos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Contrução de Website</title>
+    <link rel="stylesheet" href="./css/style.css">    
 </head>
-
 <body>
-    <header id="topo" class="flex-container"> <img id="logo" src="imagem/logo_ub.png"
-            alt="Logo da Universidade Brasil azul com o fundo transparente"></header>
-    <nav class="flex-container">
+    <header class="flex-container" id="topo">
+        <img src="imagem/logo_ub.png" alt="logo universidade brasil azul com logo transparente">
+    </header>
+    <nav class="flex-container" >
         <ul id="menu">
-            <li><a href="index.html">Início</a></li>
-            <li><a href="comentarios.html">Comentários</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="comentarios.html">Comentarios</a></li>
             <li><a href="layout.html">Layout</a></li>
-            <li><a href="#">Listas</a>
-                <ul>
-                    <li><a href="ol.html">Lista Ordenada</a></li>
-                    <li><a href="ul.html">Lista Não Ordenada</a></li>
-                </ul>
+            <li><a href="#">Listas</a> 
+                <ul>          
+                    <li><a href="ol.html">Listas Ordenadas</a></li>
+                    <li><a href="ul.html">Listas Não ordenadas</a></li>
+                </ul> 
             </li>
             <li><a href="metadados.html">Metadados</a></li>
+            <li><a href="Contato.html">Contato</a></li>
         </ul>
-    </nav>
 
+
+    </nav>
     <main class="flex-container" id="conteudo">
+        
         <section>
-            <h1>LAYOUT</h1>
-            <img src="imagem/layout.png" alt="imagem que lustra a aplicação de layout em HTML">
+                        
+        <h1>ELEMENTOS SEMÂNTICOS DE LAYOUT HTML</h1>
+        <p>&lt;header&gt; - define um cabeçalho para um documento ou seção</p>
+        <p>&lt;nav&gt; - Define um contêiner para links de navegação</p>
+        <p>&lt;section&gt; - Define uma seção em um documento</p>
+        <p>&lt;article&gt; - Define um artigo independente</p>
+        <p>&lt;aside&gt; - Define o conteúdo além do conteúdo (como uma barra lateral)</p>
+        <p>&lt;footer&gt; - define um rodapé para um documento ou seção</p>   
+
+        <img id="imgconteudo" src="imagem/layout.png" alt="imagem do modelo de layout">
+
         </section>
+
+
     </main>
     <footer class="flex-container" id="rodape">
         <p>Todos os direitos reservados &copy; 2026</p>
+
     </footer>
 </body>
-
 </html>

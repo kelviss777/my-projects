@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8"> <!-- codificação de caracteres-->
     <meta name="description" content="Conteúdos sobre HTML">
@@ -7,38 +8,42 @@
     <meta name="author" content="Anderson Marcos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contrução de Website</title>
-    <link rel="stylesheet" href="./css/style.css">    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
 </head>
+
 <body>
     <header class="flex-container" id="topo">
         <img src="imagem/logo_ub.png" alt="logo universidade brasil azul com logo transparente">
     </header>
     <nav class="flex-container">
+        <label for="bt_menu"><img src="./imagem/menu.png" alt="menu"></label>
+        <input type="checkbox" name="bt_menu" id="bt_menu">
         <ul id="menu">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="comentarios.html">Comentarios</a></li>
             <li><a href="layout.html">Layout</a></li>
-            <li><a href="#">Listas</a> 
-                <ul>          
+            <li><a href="#">Listas</a>
+                <ul>
                     <li><a href="ol.html">Listas Ordenadas</a></li>
                     <li><a href="ul.html">Listas Não ordenadas</a></li>
-                </ul> 
+                </ul>
             </li>
             <li><a href="metadados.html">Metadados</a></li>
             <li><a href="Contato.html">Contato</a></li>
         </ul>
 
 
-    </nav >
-    <main class="flex-container" id="conteudo">        
-        
-        <section>
-        
-            <h1>LISTA NÃO ORDENADA</h1>
-        <P>Uma lista ordenada começa com a tag &lt;ul&gt;. Cada item da lista começa com a tag &lt;li&gt;.</P>
-        <p>Os itens da lista serão marcados com números por padrão: </p>
+    </nav>
+    <main class="flex-container" id="conteudo">
 
-        <img id="imgconteudo" src="imagem/lista_nao_ordenada.jpg" alt=" imagem modelo da lista não ordenada">
+        <section>
+
+            <h1>LISTA NÃO ORDENADA</h1>
+            <P>Uma lista ordenada começa com a tag &lt;ul&gt;. Cada item da lista começa com a tag &lt;li&gt;.</P>
+            <p>Os itens da lista serão marcados com números por padrão: </p>
+
+            <img id="imgconteudo" src="imagem/lista_nao_ordenada.jpg" alt=" imagem modelo da lista não ordenada">
 
         </section>
 
@@ -50,4 +55,5 @@
 
     </footer>
 </body>
+
 </html>

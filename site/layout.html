@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8"> <!-- codificação de caracteres-->
     <meta name="description" content="Conteúdos sobre HTML">
@@ -7,22 +8,27 @@
     <meta name="author" content="Anderson Marcos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contrução de Website</title>
-    <link rel="stylesheet" href="./css/style.css">    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
 </head>
+
 <body>
     <header class="flex-container" id="topo">
         <img src="imagem/logo_ub.png" alt="logo universidade brasil azul com logo transparente">
     </header>
-    <nav class="flex-container" >
+    <nav class="flex-container">
+        <label for="bt_menu"><img src="./imagem/menu.png" alt="menu"></label>
+        <input type="checkbox" name="bt_menu" id="bt_menu">
+
         <ul id="menu">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="comentarios.html">Comentarios</a></li>
             <li><a href="layout.html">Layout</a></li>
-            <li><a href="#">Listas</a> 
-                <ul>          
+            <li><a href="#">Listas</a>
+                <ul>
                     <li><a href="ol.html">Listas Ordenadas</a></li>
                     <li><a href="ul.html">Listas Não ordenadas</a></li>
-                </ul> 
+                </ul>
             </li>
             <li><a href="metadados.html">Metadados</a></li>
             <li><a href="Contato.html">Contato</a></li>
@@ -31,18 +37,18 @@
 
     </nav>
     <main class="flex-container" id="conteudo">
-        
-        <section>
-                        
-        <h1>ELEMENTOS SEMÂNTICOS DE LAYOUT HTML</h1>
-        <p>&lt;header&gt; - define um cabeçalho para um documento ou seção</p>
-        <p>&lt;nav&gt; - Define um contêiner para links de navegação</p>
-        <p>&lt;section&gt; - Define uma seção em um documento</p>
-        <p>&lt;article&gt; - Define um artigo independente</p>
-        <p>&lt;aside&gt; - Define o conteúdo além do conteúdo (como uma barra lateral)</p>
-        <p>&lt;footer&gt; - define um rodapé para um documento ou seção</p>   
 
-        <img id="imgconteudo" src="imagem/layout.png" alt="imagem do modelo de layout">
+        <section>
+
+            <h1>ELEMENTOS SEMÂNTICOS DE LAYOUT HTML</h1>
+            <p>&lt;header&gt; - define um cabeçalho para um documento ou seção</p>
+            <p>&lt;nav&gt; - Define um contêiner para links de navegação</p>
+            <p>&lt;section&gt; - Define uma seção em um documento</p>
+            <p>&lt;article&gt; - Define um artigo independente</p>
+            <p>&lt;aside&gt; - Define o conteúdo além do conteúdo (como uma barra lateral)</p>
+            <p>&lt;footer&gt; - define um rodapé para um documento ou seção</p>
+
+            <img id="imgconteudo" src="imagem/layout.png" alt="imagem do modelo de layout">
 
         </section>
 
@@ -53,4 +59,5 @@
 
     </footer>
 </body>
+
 </html>

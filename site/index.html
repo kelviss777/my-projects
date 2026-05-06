@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8"> <!-- codificação de caracteres-->
     <meta name="description" content="Conteúdos sobre HTML">
@@ -7,8 +8,11 @@
     <meta name="author" content="Anderson Marcos">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contrução de Website</title>
-    <link rel="stylesheet" href="./css/style.css">    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
 </head>
+
 <body>
     <header class="flex-container" id="topo">
 
@@ -16,26 +20,36 @@
         <img id="logo" src="imagem/logo_ub.png" alt="logo universidade brasil azul com logo transparente">
     </header>
     <nav class="flex-container">
-        <ul id="menu" >
+        <label for="bt_menu"><img src="./imagem/menu.png" alt="menu"></label>
+        <input type="checkbox" name="bt_menu" id="bt_menu">
+        <ul id="menu">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="comentarios.html">Comentarios</a></li>
             <li><a href="layout.html">Layout</a></li>
-            <li><a href="#">Listas</a> 
-                <ul>          
+            <li><a href="#">Listas</a>
+                <ul>
                     <li><a href="ol.html">Listas Ordenadas</a></li>
                     <li><a href="ul.html">Listas Não Ordenadas</a></li>
-                </ul> 
+                </ul>
             </li>
             <li><a href="metadados.html">Metadados</a></li>
             <li><a href="Contato.html">Contato</a></li>
         </ul>
 
-    </nav  >
-    <main class="flex-container" id="conteudo"> 
+    </nav>
+    <main class="flex-container" id="conteudo">
 
-        <section>            
+        <section>
             <h1>CONSTRUÇÃO DE WEBSITE</h1>
-            <img id="imgindex" src="imagem/image html.png" alt=" Imagem html de fundo cor laranja">
+            <audio controls>
+                <source src="./audio/HTML.mp3" type="audio/mp3">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <img id="imgindex" src="imagem/html5.png" alt="Imagem html de fundo cor laranja">
+            <video controls>
+                <source src="./video/video.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
         </section>
 
     </main>
@@ -44,4 +58,5 @@
         <p>Todos os direitos reservados &copy; 2026</p>
     </footer>
 </body>
+
 </html>

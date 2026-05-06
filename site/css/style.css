@@ -6,16 +6,16 @@
 
 .flex-container {
     display: flex;
-    width: 100%; 
+    width: 100%;
 }
 
-#topo{
+#topo {
     height: auto;
     background-color: #fff;
     justify-content: center;
 }
 
-#logo{
+#logo {
     width: 40%;
     height: auto;
 }
@@ -23,88 +23,97 @@
 nav {
     height: auto;
     background-color: #00187a;
-    justify-content: center;   
+    justify-content: center;
 }
 
-#menu{
+#menu {
     list-style: none;
     display: inline-flex;
     justify-content: space-around;
 }
 
-#menu li{
+#menu li {
     position: relative;
     padding: 20px 30px;
 }
+
 /*link do menu*/
-#menu li a{
+#menu li a {
     color: #fff;
     text-decoration: nome;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;    
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 /* efeitos do link*/
-#menu li a:hover{ 
+#menu li a:hover {
     text-decoration: underline;
     transition: 0.5s;
 }
+
 /* ocultar submenu*/
-#menu li ul{
+#menu li ul {
     display: none;
     position: absolute;
     top: 40px;
     left: 0;
     list-style: none;
-    background-color: #010a30;    
+    background-color: #00187a;
 }
+
 /* exibir submenu*/
 
-#menu li:hover ul{
+#menu li:hover ul {
     display: block;
 }
 
-#menu li ul li{
+#menu li ul li {
     display: block;
     width: 140px;
 }
 
+/* ocutar o menu responsivo*/
+label[for="bt_menu"],
+#bt_menu {
+    display: none;
+}
 
-#conteudo{
+#conteudo {
     min-height: 700px;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     font-size: 1em;
-    
-#section{
-    padding:2% 10%;
+
+    #section {
+        padding: 2% 10%;
+
+    }
+
 
 }
-   
-        
-}
 
-#imgindex{
+#imgindex {
     width: 20%;
     height: auto;
     margin: 2rem auto;
     display: block;
-    
+
 }
 
-#imgconteudo{
+#imgconteudo {
     width: 40%;
     height: auto;
-    
+
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 3em;
-    margin: 2rem;    
+    margin: 2rem;
 }
 
-#rodape{
+#rodape {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -116,31 +125,83 @@ h1{
 
 }
 
-form{
+form {
     width: 50%;
     margin: 5% auto;
     text-align: left;
 }
-input, label, textarea{
-    display:  block;
+
+input,
+label,
+textarea {
+    display: block;
     margin-bottom: 10px;
 }
-input, textarea{
+
+input,
+textarea {
     width: 70%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-button{
+button {
     padding: 10px 20px;
     background-color: #00187a;
     color: #fff;
     border: none;
     border-radius: 5px;
-    cursor: pointer; 
-    margin-top: 5px;   
+    cursor: pointer;
+    margin-top: 5px;
 }
 
 
+video {
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+    display: block;
+}
 
+
+@media screen and (max-width: 720px) {
+    nav {
+        justify-content: left;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    label[for="bt_menu"] {
+        display: block;
+        margin: 2%;
+    }
+    #bt_menu:checked ~ #menu{
+        display: block;
+        width: 100%;
+    }
+    #menu li {
+        padding: 5% 1px;
+    }
+    #menu li ul {
+        position: static;
+    }
+    #menu li ul li {
+        position: relative;
+        display: block;
+    }
+    #imgindex {
+        width: 80%;
+        height: auto;
+    }
+    #imgconteudo {
+        width: 80%;
+        height: auto;
+    }
+    video {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clicar() {
+            alert("Olá, você clicou no botão!");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="clicar()">Clique Aqui</button>
+    <button id="btn">Clique Aqui Também</button>
+</body>
+ <script>
+        let botao = document.getElementById("btn");
+        botao.addEventListener("click", function() {
+            alert("Olá, você clicou no segundo botão!");
+        });
+    </script>
+</html>

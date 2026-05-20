@@ -10,10 +10,20 @@
     <title>Contrução de Website</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./favicon.png" type="image/x-icon">
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            $('#cpf').mask('000.000.000-00');
+            $('#cep').mask('00000-000');
+            $('#telefone').mask('(00) 00000-0000');
+        });
+    </script>
+    <script src="./js/cep.js"></script>
 </head>
 
 <body>
-    <header class="flex-container" id="topo">
+    <header class="flex-containe    r" id="topo">
         <img src="imagem/logo_ub.png" alt="logo universidade brasil azul com logo transparente">
     </header>
     <nav class="flex-container">
@@ -71,7 +81,7 @@
                     <label for="cidade">Cidade</label>
                     <input type="text" name="cidade" id="cidade" required>
                     <label for="estado">Estado</label>
-                    <input type="text" name="Estado" id="Estado" required>
+                    <input type="text" name="estado" id="estado" required>
                 </fieldset>
 
                 <fieldset>

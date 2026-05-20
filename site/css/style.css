@@ -156,6 +156,10 @@ button {
     margin-top: 5px;
 }
 
+.required::after {
+    content: "*";
+    color: red;
+}
 
 video {
     margin: 0 auto;
